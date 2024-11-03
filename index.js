@@ -6,6 +6,7 @@ Se XP for entre 7.001 e 8.000 = Platina
 Se XP for entre 8.001 e 9.000 = Ascendente
 Se XP for entre 9.001 e 10.000= Imortal
 Se XP for maior ou igual a 10.001 = Radiante*/
+let nivelHeroi = ""
 let heroi = [
   {nomeHeroi:'Link', qtdXp: 999},
   {nomeHeroi:'Kratos', qtdXp:2001},
@@ -16,21 +17,36 @@ let heroi = [
 
 for(let i=0;i<=heroi.length;i++){
   if(heroi[i].qtdXp >= 0 && heroi[i].qtdXp <=1000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Ferro!`);
+    nivelHeroi = "Ferro"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 1001 && heroi[i].qtdXp <= 2000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é  nível Bronze!`)
+    nivelHeroi = "Bronze"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 2001 && heroi[i].qtdXp <= 5000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Prata!`)
+     nivelHeroi = "Prata"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 5001 && heroi[i].qtdXp <= 7000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Ouro!`)
+    nivelHeroi = "Ouro"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 7001 && heroi[i].qtdXp <= 8000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Platina!`)
+     nivelHeroi = "Platina"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 8001 && heroi[i].qtdXp <= 9000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Ascendente!`)
+    nivelHeroi = "Ascendente"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else if(heroi[i].qtdXp >= 9001 && heroi[i].qtdXp <= 10000){
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Imortal!`)
+    nivelHeroi = "Imortal"
+    nome = heroi[i].nomeHeroi 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }else{
-    console.log(`O herói ${heroi[i].nomeHeroi} é nível Radiante!`)
+     nivelHeroi = "Radiante";
+    nome = heroi[i].nomeHeroi; 
+    console.log(`O herói ${nome} é nível ${nivelHeroi}!`);
   }
 }
-
